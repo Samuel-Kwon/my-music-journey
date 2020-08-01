@@ -13,7 +13,7 @@ AOS.init({
 function App() {
   return (
     <Router>
-        <Nav />
+        <Route path="/" exact component={Nav} />
         <Route path="/" exact component={Landing} />
         <Route path="/view" exact component={View} />
     </Router>
