@@ -6,7 +6,7 @@ export class Nav extends React.Component {
     return (      
       <div className="nav">
           <div className="nav-text">
-            <a>View</a>
+            <a href="/view">View</a>
             <a>Upload</a>
           </div>
       </div>
