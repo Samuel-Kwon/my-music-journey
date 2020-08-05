@@ -14,10 +14,6 @@ export class View extends React.Component {
                 <img src={back} />
               </a>
             </div>
-
-            <input type="file" name="file"></input>
-
-            <button onClick={() => main("video_0928", "./")}>Click Me</button>
           </div>
 
           <div className="sroll-menu">

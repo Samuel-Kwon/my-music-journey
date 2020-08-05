@@ -75,17 +75,43 @@ export class Upload extends React.Component {
     return (
       <div className="upload">
         <div className="upload-container" data-aos="fade-in">
-          <div className="view-content-header">
+          <div className="upload-container-header">
             <a href="/">
               <img src={back} />
             </a>
           </div>
-          <div class="drop-zone">
-            <span class="drop-zone__prompt">
-              Drop file here or click to upload
-            </span>
-            <input type="file" name="myFile" class="drop-zone__input" />
+
+          <div className="upload-content">
+            <div className="upload-form">
+              <input
+                type="text"
+                placeholder="Song Title"
+                id="title"
+                name="title"
+              />
+              <input
+                type="text"
+                placeholder="Artist"
+                id="artist"
+                name="artist"
+              />
+              <textarea
+                type="text"
+                placeholder="Description"
+                id="des"
+                name="des"
+              />
+            </div>
+
+            <div className="drop-zone">
+              <span className="drop-zone__prompt">
+                Drop file here or click to upload
+              </span>
+              <input type="file" name="myFile" className="drop-zone__input" />
+            </div>
           </div>
+
+          <input type="submit" class="input-submit" />
         </div>
       </div>
     );
