@@ -1,14 +1,14 @@
-import React from 'react';
-import '../css/nav.css';
+import React from "react";
+import "../css/nav.css";
 
 export class Nav extends React.Component {
   render() {
-    return (      
+    return (
       <div className="nav">
-          <div className="nav-text">
-            <a href="/view">View</a>
-            <a>Upload</a>
-          </div>
+        <div className="nav-text">
+          <a href="/view">View</a>
+          <a href="/upload">Upload</a>
+        </div>
       </div>
     );
   }

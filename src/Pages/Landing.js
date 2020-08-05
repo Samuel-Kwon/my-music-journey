@@ -1,14 +1,14 @@
-import React from 'react';
-import '../css/Landing.css';
+import React from "react";
+import "../css/landing.css";
 
 export class Landing extends React.Component {
   render() {
-    return (      
+    return (
       <div className="landing">
         <div className="container" data-aos="fade-in">
           Welcome To My Music Journey
         </div>
-      </div>     
+      </div>
     );
   }
 }
