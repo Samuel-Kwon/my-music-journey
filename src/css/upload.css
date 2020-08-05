@@ -17,8 +17,16 @@
   height: 80vh;
   background-color: #16182b;
   border: 8px solid white;
-  display: flex;
-  align-items: center;
+}
+
+.upload-container img {
+  margin: 30px 0 30px 30px;
+  width: 50px;
+  position: relative;
+}
+
+.upload-content-header {
+  width: 100%;
 }
 
 .drop-zone {

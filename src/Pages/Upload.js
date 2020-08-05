@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/upload.css";
+import back from "../image/icon-back.png";
 
 export class Upload extends React.Component {
   componentDidMount() {
@@ -74,6 +75,11 @@ export class Upload extends React.Component {
     return (
       <div className="upload">
         <div className="upload-container" data-aos="fade-in">
+          <div className="view-content-header">
+            <a href="/">
+              <img src={back} />
+            </a>
+          </div>
           <div class="drop-zone">
             <span class="drop-zone__prompt">
               Drop file here or click to upload
