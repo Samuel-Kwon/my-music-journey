@@ -34,13 +34,6 @@
   width: 100%;
 }
 
-.upload-content {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .drop-zone {
   width: 400px;
   height: 400px;
@@ -91,15 +84,26 @@
 }
 
 .upload-form {
-  width: 425px;
-  height: 425px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 25px;
+  align-items: center;
+  width: 800px;
 }
 
-.upload-form input {
+.upload-form-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upload-form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-form input[type="text"] {
   background-color: transparent;
   border: 2px solid white;
   padding: 20px;
@@ -132,12 +136,11 @@
 }
 
 .input-submit {
-  width: 150px;
+  font-size: 20px;
   margin-top: 80px;
   background-color: transparent;
   border: 2px solid white;
   border-radius: 5px;
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
+  width: 150px;
+  height: 50px;
 }

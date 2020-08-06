@@ -81,37 +81,39 @@ export class Upload extends React.Component {
             </a>
           </div>
 
-          <div className="upload-content">
-            <div className="upload-form">
-              <input
-                type="text"
-                placeholder="Song Title"
-                id="title"
-                name="title"
-              />
-              <input
-                type="text"
-                placeholder="Artist"
-                id="artist"
-                name="artist"
-              />
-              <textarea
-                type="text"
-                placeholder="Description"
-                id="des"
-                name="des"
-              />
+          <form className="upload-form">
+            <div className="upload-form-content">
+              <div className="upload-form-input">
+                <input
+                  type="text"
+                  placeholder="Song Title"
+                  id="title"
+                  name="title"
+                />
+                <input
+                  type="text"
+                  placeholder="Artist"
+                  id="artist"
+                  name="artist"
+                />
+                <textarea
+                  type="text"
+                  placeholder="Description"
+                  id="des"
+                  name="des"
+                />
+              </div>
+
+              <div className="drop-zone">
+                <span className="drop-zone__prompt">
+                  Drop file here or click to upload
+                </span>
+                <input type="file" name="myFile" className="drop-zone__input" />
+              </div>
             </div>
 
-            <div className="drop-zone">
-              <span className="drop-zone__prompt">
-                Drop file here or click to upload
-              </span>
-              <input type="file" name="myFile" className="drop-zone__input" />
-            </div>
-          </div>
-
-          <input type="submit" class="input-submit" />
+            <input type="submit" class="input-submit" />
+          </form>
         </div>
       </div>
     );
