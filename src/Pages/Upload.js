@@ -1,8 +1,57 @@
 import React from "react";
 import "../css/upload.css";
 import back from "../image/icon-back.png";
+import { storage } from "../firebase";
 
 export class Upload extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      video: null,
+      url: "",
+      progress: 0,
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleUpload = this.handleUpload.bind(this);
+  }
+
+  handleChange = (e) => {
+    if (e.target.files[0]) {
+      const video = e.target.files[0];
+      this.setState({ video });
+    }
+  };
+
+  handleUpload = () => {
+    const { video } = this.state;
+    const uploadTask = storage.ref(`video/${video.name}`).put(video);
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => {
+        const progress = Math.round(
+          (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+        );
+
+        this.setState({ progress });
+      },
+      (error) => {
+        console.log(error);
+      },
+      () => {
+        storage
+          .ref("video")
+          .child(video.name)
+          .getDownloadURL()
+          .then((url) => {
+            console.log(url);
+            this.setState({ url });
+          });
+      }
+    );
+
+    alert("Uploaded Successfully!");
+  };
+
   componentDidMount() {
     document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
       const dropZoneElement = inputElement.closest(".drop-zone");
@@ -81,7 +130,7 @@ export class Upload extends React.Component {
             </a>
           </div>
 
-          <form className="upload-form">
+          <div className="upload-form">
             <div className="upload-form-content">
               <div className="upload-form-input">
                 <input
@@ -96,6 +145,7 @@ export class Upload extends React.Component {
                   id="artist"
                   name="artist"
                 />
+
                 <textarea
                   type="text"
                   placeholder="Description"
@@ -108,12 +158,25 @@ export class Upload extends React.Component {
                 <span className="drop-zone__prompt">
                   Drop file here or click to upload
                 </span>
-                <input type="file" name="myFile" className="drop-zone__input" />
+                <input
+                  type="file"
+                  name="myFile"
+                  className="drop-zone__input"
+                  onChange={this.handleChange}
+                />
               </div>
             </div>
 
-            <input type="submit" class="input-submit" />
-          </form>
+            <button class="input-submit" onClick={this.handleUpload}>
+              Submit
+            </button>
+
+            <progress
+              value={this.state.progress}
+              max="100"
+              className="uploadProgress"
+            />
+          </div>
         </div>
       </div>
     );

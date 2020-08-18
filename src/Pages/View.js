@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/view.css";
 import back from "../image/icon-back.png";
-import main from "../Cloud/Upload";
 
 export class View extends React.Component {
   render() {
