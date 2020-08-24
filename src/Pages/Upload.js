@@ -2,6 +2,7 @@ import React from "react";
 import "../css/upload.css";
 import back from "../image/icon-back.png";
 import { storage } from "../firebase";
+import { Link } from "react-router-dom";
 
 export class Upload extends React.Component {
   constructor(props) {
@@ -125,9 +126,9 @@ export class Upload extends React.Component {
       <div className="upload">
         <div className="upload-container" data-aos="fade-in">
           <div className="upload-container-header">
-            <a href="/">
+            <Link to="/">
               <img src={back} />
-            </a>
+            </Link>
           </div>
 
           <div className="upload-form">

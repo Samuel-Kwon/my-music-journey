@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/view.css";
 import back from "../image/icon-back.png";
+import { Link } from "react-router-dom";
 
 export class View extends React.Component {
   render() {
@@ -9,9 +10,9 @@ export class View extends React.Component {
         <div className="view-container" data-aos="fade-in">
           <div className="view-content">
             <div className="view-content-header">
-              <a href="/">
+              <Link to="/">
                 <img src={back} />
-              </a>
+              </Link>
             </div>
           </div>
 
