@@ -5,7 +5,7 @@ import { View } from "./Pages/View";
 import { Upload } from "./Pages/Upload";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import firebase from "./firebase";
 
 AOS.init({
