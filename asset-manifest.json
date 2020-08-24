@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/my-music-journey/static/css/main.92f15bff.chunk.css",
-    "main.js": "/my-music-journey/static/js/main.d22064f3.chunk.js",
-    "main.js.map": "/my-music-journey/static/js/main.d22064f3.chunk.js.map",
+    "main.css": "/my-music-journey/static/css/main.fe052044.chunk.css",
+    "main.js": "/my-music-journey/static/js/main.ec49f45b.chunk.js",
+    "main.js.map": "/my-music-journey/static/js/main.ec49f45b.chunk.js.map",
     "runtime-main.js": "/my-music-journey/static/js/runtime-main.6f5ec919.js",
     "runtime-main.js.map": "/my-music-journey/static/js/runtime-main.6f5ec919.js.map",
     "static/css/2.eb43dee1.chunk.css": "/my-music-journey/static/css/2.eb43dee1.chunk.css",
-    "static/js/2.907b6135.chunk.js": "/my-music-journey/static/js/2.907b6135.chunk.js",
-    "static/js/2.907b6135.chunk.js.map": "/my-music-journey/static/js/2.907b6135.chunk.js.map",
+    "static/js/2.31adc477.chunk.js": "/my-music-journey/static/js/2.31adc477.chunk.js",
+    "static/js/2.31adc477.chunk.js.map": "/my-music-journey/static/js/2.31adc477.chunk.js.map",
     "index.html": "/my-music-journey/index.html",
-    "precache-manifest.7bf8429dcc778e57a96d9c8351a3dc52.js": "/my-music-journey/precache-manifest.7bf8429dcc778e57a96d9c8351a3dc52.js",
+    "precache-manifest.920fe38e51ed0e5bfdd1901d1a3df8d1.js": "/my-music-journey/precache-manifest.920fe38e51ed0e5bfdd1901d1a3df8d1.js",
     "service-worker.js": "/my-music-journey/service-worker.js",
     "static/css/2.eb43dee1.chunk.css.map": "/my-music-journey/static/css/2.eb43dee1.chunk.css.map",
-    "static/css/main.92f15bff.chunk.css.map": "/my-music-journey/static/css/main.92f15bff.chunk.css.map",
-    "static/js/2.907b6135.chunk.js.LICENSE.txt": "/my-music-journey/static/js/2.907b6135.chunk.js.LICENSE.txt",
-    "static/media/landing.css": "/my-music-journey/static/media/Landing.1c2a1740.jpg"
+    "static/css/main.fe052044.chunk.css.map": "/my-music-journey/static/css/main.fe052044.chunk.css.map",
+    "static/js/2.31adc477.chunk.js.LICENSE.txt": "/my-music-journey/static/js/2.31adc477.chunk.js.LICENSE.txt",
+    "static/media/Landing.css": "/my-music-journey/static/media/Landing.1c2a1740.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6f5ec919.js",
     "static/css/2.eb43dee1.chunk.css",
-    "static/js/2.907b6135.chunk.js",
-    "static/css/main.92f15bff.chunk.css",
-    "static/js/main.d22064f3.chunk.js"
+    "static/js/2.31adc477.chunk.js",
+    "static/css/main.fe052044.chunk.css",
+    "static/js/main.ec49f45b.chunk.js"
   ]
 }

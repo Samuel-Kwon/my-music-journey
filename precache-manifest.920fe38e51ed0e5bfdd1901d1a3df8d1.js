@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f70e9e975c72a36646233ba77f8abc4c",
+    "revision": "37d1d66bbe6b694836b3e28f009f1436",
     "url": "/my-music-journey/index.html"
   },
   {
-    "revision": "096e604b3462b764062a",
+    "revision": "c69c00cd712ea1233640",
     "url": "/my-music-journey/static/css/2.eb43dee1.chunk.css"
   },
   {
-    "revision": "43471dd7dd37e159db05",
-    "url": "/my-music-journey/static/css/main.92f15bff.chunk.css"
+    "revision": "5299f8e5f15f16b62a70",
+    "url": "/my-music-journey/static/css/main.fe052044.chunk.css"
   },
   {
-    "revision": "096e604b3462b764062a",
-    "url": "/my-music-journey/static/js/2.907b6135.chunk.js"
+    "revision": "c69c00cd712ea1233640",
+    "url": "/my-music-journey/static/js/2.31adc477.chunk.js"
   },
   {
     "revision": "4224b32d50aca7d0b4f248bf0384ed4f",
-    "url": "/my-music-journey/static/js/2.907b6135.chunk.js.LICENSE.txt"
+    "url": "/my-music-journey/static/js/2.31adc477.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "43471dd7dd37e159db05",
-    "url": "/my-music-journey/static/js/main.d22064f3.chunk.js"
+    "revision": "5299f8e5f15f16b62a70",
+    "url": "/my-music-journey/static/js/main.ec49f45b.chunk.js"
   },
   {
     "revision": "d82fbd1003fcd83469b5",
