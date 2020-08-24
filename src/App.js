@@ -15,10 +15,26 @@ AOS.init({
 function App() {
   return (
     <Router>
-      <Route path="/" exact component={Nav} />
-      <Route path="/" exact component={Landing} />
-      <Route path="/view" exact component={View} />
-      <Route path="/upload" exact component={Upload} />
+      <Route
+        path="https://samuel-kwon.github.io/my-music-journey/"
+        exact
+        component={Nav}
+      />
+      <Route
+        path="https://samuel-kwon.github.io/my-music-journey/"
+        exact
+        component={Landing}
+      />
+      <Route
+        path="https://samuel-kwon.github.io/my-music-journey/view"
+        exact
+        component={View}
+      />
+      <Route
+        path="https://samuel-kwon.github.io/my-music-journey/upload"
+        exact
+        component={Upload}
+      />
     </Router>
   );
 }
