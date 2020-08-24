@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8919d5115f849dc794113c75ef6a75a0",
+    "revision": "8848a2902a6b2ab7cca142e61bf71a77",
     "url": "/my-music-journey/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-music-journey/static/css/2.eb43dee1.chunk.css"
   },
   {
-    "revision": "3964e149e695d67bf1f1",
+    "revision": "2a138f6e91a4f76408d8",
     "url": "/my-music-journey/static/css/main.92f15bff.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-music-journey/static/js/2.e6f8c0a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3964e149e695d67bf1f1",
-    "url": "/my-music-journey/static/js/main.f6d8ae54.chunk.js"
+    "revision": "2a138f6e91a4f76408d8",
+    "url": "/my-music-journey/static/js/main.e142a893.chunk.js"
   },
   {
     "revision": "d82fbd1003fcd83469b5",
