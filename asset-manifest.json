@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/my-music-journey/static/css/main.92f15bff.chunk.css",
+    "main.js": "/my-music-journey/static/js/main.f6d8ae54.chunk.js",
+    "main.js.map": "/my-music-journey/static/js/main.f6d8ae54.chunk.js.map",
+    "runtime-main.js": "/my-music-journey/static/js/runtime-main.6f5ec919.js",
+    "runtime-main.js.map": "/my-music-journey/static/js/runtime-main.6f5ec919.js.map",
+    "static/css/2.eb43dee1.chunk.css": "/my-music-journey/static/css/2.eb43dee1.chunk.css",
+    "static/js/2.e6f8c0a1.chunk.js": "/my-music-journey/static/js/2.e6f8c0a1.chunk.js",
+    "static/js/2.e6f8c0a1.chunk.js.map": "/my-music-journey/static/js/2.e6f8c0a1.chunk.js.map",
+    "index.html": "/my-music-journey/index.html",
+    "precache-manifest.11fb15d50305f93f8cbca0264b29edcc.js": "/my-music-journey/precache-manifest.11fb15d50305f93f8cbca0264b29edcc.js",
+    "service-worker.js": "/my-music-journey/service-worker.js",
+    "static/css/2.eb43dee1.chunk.css.map": "/my-music-journey/static/css/2.eb43dee1.chunk.css.map",
+    "static/css/main.92f15bff.chunk.css.map": "/my-music-journey/static/css/main.92f15bff.chunk.css.map",
+    "static/js/2.e6f8c0a1.chunk.js.LICENSE.txt": "/my-music-journey/static/js/2.e6f8c0a1.chunk.js.LICENSE.txt",
+    "static/media/landing.css": "/my-music-journey/static/media/Landing.1c2a1740.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f5ec919.js",
+    "static/css/2.eb43dee1.chunk.css",
+    "static/js/2.e6f8c0a1.chunk.js",
+    "static/css/main.92f15bff.chunk.css",
+    "static/js/main.f6d8ae54.chunk.js"
+  ]
+}
