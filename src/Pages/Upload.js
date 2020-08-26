@@ -3,6 +3,7 @@ import "../css/upload.css";
 import back from "../image/icon-back.png";
 import { storage } from "../firebase";
 import { Link } from "react-router-dom";
+import firebase from "firebase/app";
 
 export class Upload extends React.Component {
   constructor(props) {
@@ -15,6 +16,28 @@ export class Upload extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleUpload = this.handleUpload.bind(this);
   }
+
+  downloadTxtFile = () => {
+    const content =
+      document.getElementById("title").value +
+      "," +
+      document.getElementById("artist").value +
+      "," +
+      document.getElementById("des").value;
+    const file = new Blob([content], {
+      type: "text/plain;charset=utf-8",
+    });
+
+    const storageRef = firebase
+      .storage()
+      .ref(
+        `about/${document.getElementById("artist").value} - ${
+          document.getElementById("title").value
+        }`
+      );
+
+    storageRef.put(file);
+  };
 
   handleChange = (e) => {
     if (e.target.files[0]) {
@@ -49,8 +72,6 @@ export class Upload extends React.Component {
           });
       }
     );
-
-    alert("Uploaded Successfully!");
   };
 
   componentDidMount() {
@@ -168,7 +189,13 @@ export class Upload extends React.Component {
               </div>
             </div>
 
-            <button class="input-submit" onClick={this.handleUpload}>
+            <button
+              class="input-submit"
+              onClick={() => {
+                this.handleUpload();
+                this.downloadTxtFile();
+              }}
+            >
               Submit
             </button>
 
@@ -177,6 +204,8 @@ export class Upload extends React.Component {
               max="100"
               className="uploadProgress"
             />
+
+            <p>{this.state.progress}%</p>
           </div>
         </div>
       </div>

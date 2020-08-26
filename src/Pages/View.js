@@ -2,6 +2,8 @@ import React from "react";
 import "../css/view.css";
 import back from "../image/icon-back.png";
 import { Link } from "react-router-dom";
+import { storage } from "../firebase";
+import firebase from "firebase/app";
 
 export class View extends React.Component {
   render() {
