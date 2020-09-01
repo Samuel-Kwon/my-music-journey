@@ -149,20 +149,4 @@
   margin-top: 20px;
   width: 250px;
   height: 30px;
-  /* -webkit-appearance: none; */
-  /* border: 2px solid white;
-  border-radius: 5px; */
 }
-
-/* progress::-webkit-progress-bar {
-  color: black;
-  background-color: transparent;
-}
-progress::-webkit-progress-value {
-  color: black;
-  background-color: transparent;
-}
-progress::-moz-progress-bar {
-  color: black;
-  background-color: transparent;
-} */

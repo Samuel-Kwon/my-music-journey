@@ -3,7 +3,7 @@ import "../css/upload.css";
 import back from "../image/icon-back.png";
 import { storage } from "../firebase";
 import { Link } from "react-router-dom";
-import firebase from "firebase/app";
+import firebase from "firebase";
 
 export class Upload extends React.Component {
   constructor(props) {
@@ -13,42 +13,23 @@ export class Upload extends React.Component {
       url: "",
       progress: 0,
     };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleUpload = this.handleUpload.bind(this);
   }
 
-  downloadTxtFile = () => {
-    const content =
-      document.getElementById("title").value +
-      "," +
-      document.getElementById("artist").value +
-      "," +
-      document.getElementById("des").value;
-    const file = new Blob([content], {
-      type: "text/plain;charset=utf-8",
-    });
-
-    const storageRef = firebase
-      .storage()
-      .ref(
-        `about/${document.getElementById("artist").value} - ${
-          document.getElementById("title").value
-        }`
-      );
-
-    storageRef.put(file);
-  };
-
-  handleChange = (e) => {
-    if (e.target.files[0]) {
-      const video = e.target.files[0];
-      this.setState({ video });
-    }
-  };
-
   handleUpload = () => {
+    var time = Date.now();
+
+    var post = {
+      Key: time,
+      Title: document.getElementById("title").value,
+      Artist: document.getElementById("artist").value,
+      Des: document.getElementById("des").value,
+    };
+
+    var firebaseRef = firebase.database().ref();
+    firebaseRef.child(time).set(post);
+
     const { video } = this.state;
-    const uploadTask = storage.ref(`video/${video.name}`).put(video);
+    const uploadTask = storage.ref(`video/${time}`).put(video);
     uploadTask.on(
       "state_changed",
       (snapshot) => {
@@ -72,6 +53,14 @@ export class Upload extends React.Component {
           });
       }
     );
+  };
+
+  handleChange = (e) => {
+    console.log(e.target.file);
+    if (e.target.files[0]) {
+      const video = e.target.files[0];
+      this.setState({ video });
+    }
   };
 
   componentDidMount() {
@@ -101,7 +90,6 @@ export class Upload extends React.Component {
 
       dropZoneElement.addEventListener("drop", (e) => {
         e.preventDefault();
-
         if (e.dataTransfer.files.length) {
           inputElement.files = e.dataTransfer.files;
           updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
@@ -148,7 +136,7 @@ export class Upload extends React.Component {
         <div className="upload-container" data-aos="fade-in">
           <div className="upload-container-header">
             <Link to="/">
-              <img src={back} />
+              <img src={back} alt="back-icon" />
             </Link>
           </div>
 
@@ -189,13 +177,7 @@ export class Upload extends React.Component {
               </div>
             </div>
 
-            <button
-              class="input-submit"
-              onClick={() => {
-                this.handleUpload();
-                this.downloadTxtFile();
-              }}
-            >
+            <button className="input-submit" onClick={this.handleUpload}>
               Submit
             </button>
 
