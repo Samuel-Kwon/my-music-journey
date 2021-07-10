@@ -166,7 +166,7 @@ export class Upload extends React.Component {
 
               <div className="drop-zone">
                 <span className="drop-zone__prompt">
-                  Drop file here or click to upload
+                  Click here to upload file.
                 </span>
                 <input
                   type="file"
