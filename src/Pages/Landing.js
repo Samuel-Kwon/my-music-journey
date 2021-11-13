@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Landing.css";
+import "../css/responsive.css";
 
 export class Landing extends React.Component {
   render() {

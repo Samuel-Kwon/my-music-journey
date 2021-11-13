@@ -16,7 +16,7 @@
 }
 .upload-container {
   width: 90%;
-  height: 80vh;
+  height: 85vh;
   background-color: #16182b;
   border: 8px solid white;
   display: flex;
@@ -87,7 +87,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 800px;
+  width: 70%;
+  height: 60vh;
 }
 
 .upload-form-content {
@@ -137,7 +138,7 @@
 
 .input-submit {
   font-size: 20px;
-  margin-top: 80px;
+  margin-top: 5%;
   background-color: transparent;
   border: 2px solid white;
   border-radius: 5px;

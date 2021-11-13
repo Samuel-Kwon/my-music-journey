@@ -7,6 +7,9 @@
 .landing {
   height: 100vh;
   background-image: url("../image/Landing.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   display: flex;
   align-items: center;
@@ -18,12 +21,13 @@
 }
 
 .container {
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 8px solid white;
   width: 45%;
   padding: 120px;
   color: white;
-  position: absolute;
   font-size: 35px;
   text-align: center;
 }
