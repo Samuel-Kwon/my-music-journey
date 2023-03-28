@@ -41,16 +41,6 @@ export class Upload extends React.Component {
       },
       (error) => {
         console.log(error);
-      },
-      () => {
-        storage
-          .ref("video")
-          .child(video.name)
-          .getDownloadURL()
-          .then((url) => {
-            console.log(url);
-            this.setState({ url });
-          });
       }
     );
   };
